@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'hero';
+	src: url('../../src/fonts/HeroLight-Regular.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'hero-light';
+	src: url('../../src/fonts/HeroLight-Light.woff2') format('woff2');
+	font-weight: light;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'hero-bold';
+	src: url('../../src/fonts/HeroLight-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

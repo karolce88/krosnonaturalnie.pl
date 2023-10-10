@@ -1,0 +1,46 @@
+@media (min-width: 576px) {
+	.header {
+		justify-content: flex-end;
+
+		&::before {
+			background-color: #12121251;
+		}
+	
+		&::after {
+			background-color: #1502025d;
+		}
+
+		&__box {
+			bottom: 14%;
+			left: 15%;
+		}
+
+		&__button {
+			margin-top: 45px;
+		}
+
+		&__h1-head {
+			font-size: 36px;
+			line-height: 36px;
+		}
+	}
+	
+	.main {
+		.aboutme {
+			position: relative;
+		}
+
+		.prices {
+			&__table {
+				font-size: 13px;
+			}
+
+			&__tbody-row-items {
+				padding: 10px 12px;
+			}
+		}
+
+	}
+
+
+}

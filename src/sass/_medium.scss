@@ -1,0 +1,65 @@
+@media (min-width: 768px) {
+	.header {
+		background-position: 55% 75%;
+		justify-content: flex-end;
+
+		&::before {
+			background-color: #12121237;
+		}
+	
+		&::after {
+			background-color: #15020242;
+		}
+
+		&__h1-head {
+			font-size: 38px;
+			z-index: 10;
+		}
+
+		&__paragraph {
+			padding-top: 25px;
+			font-size: 26px;
+		}
+
+		&__box {
+			bottom: 16%;
+			left: 20%;
+		}
+
+		&__button {
+			margin-top: 45px;
+		}
+	}
+
+	.faq-container{
+		height: auto;
+		width: 80%;
+	}
+
+	.main {
+
+		.aboutme {
+			scroll-margin-top: 0px;
+
+			&__box-text-title-h2 {
+				font-size: 26px;
+			}
+		}
+
+		.prices {
+			&__table {
+				font-size: 15px;
+			}
+
+			&__tbody-row-items {
+				padding: 12px 14px;
+			}
+		}
+	}
+
+	.footer {
+		&__box {
+			margin: 35px 60px;
+		}
+	}
+}

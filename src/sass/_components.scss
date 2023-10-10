@@ -1,0 +1,107 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes arrowIconMenuOffertItem {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(-180deg);
+	}
+}
+
+@keyframes arrowIconMenuOffertItemRev {
+	from {
+		transform: rotateX(180deg);
+	}
+	to {
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes showEducationList {
+	from {
+		opacity: 0;
+		height: 0px;
+	}
+	to {
+		opacity: 1;
+		height: auto;
+	}
+}
+
+@keyframes closeEducationList {
+	from {
+		opacity: 1;
+		height: auto;
+	}
+	to {
+		opacity: 0;
+		height: 0px;
+	}
+}
+
+@keyframes showOfferIndications {
+	from {
+		height: 212px;
+	}
+	to {
+		height: auto;
+	}
+}
+
+@keyframes closeOfferIndications {
+	from {
+		height: auto;
+	}
+	to {
+		height: 212px;
+	}
+}
+
+@keyframes rotateIndicationOffer {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 180deg;
+	}
+}
+
+@keyframes rotateIndicationOffer-Rev {
+	from {
+		rotate: 180deg;
+	}
+	to {
+		rotate: 0;
+	}
+}
+
+.breakline-svg {
+	max-width: 100%;
+	height: auto;
+}
+
+.breakline-svg-bottom {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.breakline-svg-top {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+@keyframes rings-arrow {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
