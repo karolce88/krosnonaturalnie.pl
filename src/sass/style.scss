@@ -330,8 +330,7 @@ body {
 		cursor: pointer;
 		margin-bottom: 8%;
 		border-radius: 5px;
-		transition: all .3s;
-
+		transition: all 0.3s;
 
 		&:hover {
 			background-color: $MAIN-color;
@@ -371,7 +370,6 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	overflow: hidden;
-	
 
 	&__shadow {
 		position: absolute;
@@ -504,7 +502,7 @@ body {
 
 	&__ring2 {
 		background-image: url('../../dist/img/magda-ring.JPG');
-		
+
 		&:hover {
 			scale: 1.03;
 		}
@@ -512,7 +510,7 @@ body {
 
 	&__ring3 {
 		background-image: url('../../dist/img/fabian-ring.JPG');
-		
+
 		&:hover {
 			scale: 1.03;
 		}
@@ -525,7 +523,7 @@ body {
 		right: 0;
 		bottom: 0;
 		border-radius: 50%;
-		background-color: rgba(121, 100, 101, .8);
+		background-color: rgba(121, 100, 101, 0.8);
 		opacity: 0;
 		perspective: 800px;
 		transition: 0.7s;
@@ -553,7 +551,7 @@ body {
 
 	&__text-arrow {
 		margin-bottom: 10px;
-		animation: rings-arrow .6s ease infinite;
+		animation: rings-arrow 0.6s ease infinite;
 	}
 }
 
@@ -657,101 +655,101 @@ body {
 		}
 	}
 
-		//  faq - component
+	//  faq - component
 
-		.faq-container {
-			height: auto;
-			width: 100%;
-			padding: 12px 15px 0px 15px;
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-		}
-	
-		.accordion {
-			width: 100%;
-			padding: 0 5px;
-			border-top: 1px solid transparent;
-			border-left: 1px solid transparent;
-			border-right: 1px solid transparent;
-			border-bottom: 3px solid $black;
-			// border-radius: 5px;
-			cursor: pointer;
-			display: flex;
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
-			transition: all 0.4s;
-	
-			&:hover {
-				background-color: $bg-faq;
-			}
-		}
-	
-		.topic {
-			padding: 12px;
-			border-bottom: 1px;
-			padding: 10px 15px;
-			font-size: 15px;
-			pointer-events: none;
-			font-size: 'roboto-bold';
-			transition: all 0.5s ease-in;
-		}
-	
-		.h3-faq-svg-icon {
-			margin: 0 10px;
-			transition: all 0.3s;
-			pointer-events: none;
-		}
-	
-		.faq-bg-accordion {
-			// background-color: $brown-lite;
-			background-color: $bg-faq;
-			border-top: 1px solid black;
-			border-left: 1px solid black;
-			border-right: 1px solid black;
-			transition: all 0.5s ease-in;
-		}
-	
-		.panel {
-			padding: 0 15px;
-			overflow: hidden;
-			transition: all 0.5s ease-in;
-			border: 1px solid $black;
-			// border-radius: 5px;
-			border-top: none;
-			opacity: 0;
-			height: 0px;
-			transition: all 0.3s;
-			margin-bottom: 15px;
+	.faq-container {
+		height: auto;
+		width: 100%;
+		padding: 12px 15px 0px 15px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.accordion {
+		width: 100%;
+		padding: 0 5px;
+		border-top: 1px solid transparent;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+		border-bottom: 3px solid $black;
+		// border-radius: 5px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		transition: all 0.4s;
+
+		&:hover {
 			background-color: $bg-faq;
 		}
-	
-		.accordion-bgc {
-			border-bottom: 3px solid $footer-bg;
-		}
-	
-		.list-content {
-			margin: 10px 0px 10px 25px;
-			font-size: 14px;
-			line-height: 20px;
-		}
-	
-		.show-panel {
-			animation: showEducationList 0.3s ease-in forwards;
-		}
-	
-		.hide-panel {
-			animation: closeEducationList 0.3s ease-in forwards;
-		}
-	
-		.rotate-icon-aboutme {
-			animation: arrowIconMenuOffertItem 1s ease forwards;
-		}
-	
-		.rotate-rev-icon-aboutme {
-			animation: arrowIconMenuOffertItemRev 1s ease forwards;
-		}
+	}
+
+	.topic {
+		padding: 12px;
+		border-bottom: 1px;
+		padding: 10px 15px;
+		font-size: 15px;
+		pointer-events: none;
+		font-size: 'roboto-bold';
+		transition: all 0.5s ease-in;
+	}
+
+	.h3-faq-svg-icon {
+		margin: 0 10px;
+		transition: all 0.3s;
+		pointer-events: none;
+	}
+
+	.faq-bg-accordion {
+		// background-color: $brown-lite;
+		background-color: $bg-faq;
+		border-top: 1px solid black;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		transition: all 0.5s ease-in;
+	}
+
+	.panel {
+		padding: 0 15px;
+		overflow: hidden;
+		transition: all 0.5s ease-in;
+		border: 1px solid $black;
+		// border-radius: 5px;
+		border-top: none;
+		opacity: 0;
+		height: 0px;
+		transition: all 0.3s;
+		margin-bottom: 15px;
+		background-color: $bg-faq;
+	}
+
+	.accordion-bgc {
+		border-bottom: 3px solid $footer-bg;
+	}
+
+	.list-content {
+		margin: 10px 0px 10px 25px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.show-panel {
+		animation: showEducationList 0.3s ease-in forwards;
+	}
+
+	.hide-panel {
+		animation: closeEducationList 0.3s ease-in forwards;
+	}
+
+	.rotate-icon-aboutme {
+		animation: arrowIconMenuOffertItem 1s ease forwards;
+	}
+
+	.rotate-rev-icon-aboutme {
+		animation: arrowIconMenuOffertItemRev 1s ease forwards;
+	}
 
 	.aboutme {
 		scroll-margin-top: 20px;
@@ -804,7 +802,7 @@ body {
 	.offer {
 		background-color: $bg-offer;
 	}
-	
+
 	.prices {
 		background-color: $bg-prices;
 
@@ -820,17 +818,19 @@ body {
 			width: 100%;
 			line-height: 21px;
 			padding: 0 14px;
+			margin-bottom: 80px;
 		}
 
 		&__table-head {
 			background-color: $brown-lite;
 			color: $black;
+			height: 55px;
 			// padding: 8px 0;
 		}
 
 		&__table-head-row {
 			padding: 8px 2px;
-			// border-radius: 5px;
+			border-radius: 5px;
 			font-family: 'hero-bold';
 			font-weight: bold;
 		}
@@ -851,6 +851,7 @@ body {
 
 		&__tbody-row-items {
 			padding: 10px 2px;
+			border-radius: 5px;
 
 			&:first-child {
 				width: 25%;
@@ -860,7 +861,6 @@ body {
 				width: 10%;
 			}
 		}
-
 	}
 
 	.blog {
@@ -869,6 +869,140 @@ body {
 
 	.contact {
 		background-color: $bg-contact;
+
+
+
+		&__container {
+			margin: 50px 0;
+		}
+
+		&__box {
+
+			&-text {
+				position: relative;
+				margin-bottom: 20px;
+				padding: 12px 16px;
+				z-index: 10;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 800%;
+					height: 105px;
+					border-radius: 5px;
+					top: 0px;
+					left: 0px;
+					background-color: $bg-prices-table-light;
+					z-index: -1;
+				}
+
+				&-phone {
+					text-decoration: none;
+				}
+			}
+
+			&-text2 {
+				position: relative;
+				margin-bottom: 20px;
+				margin-top: 20px;
+				padding: 12px 16px;
+				z-index: 10;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 800%;
+					height: 125px;
+					border-radius: 5px;
+					top: 0px;
+					left: 0px;
+					background-color: $bg-prices-table-light;
+					z-index: -1;
+				}
+			}
+
+			&-maps {
+				position: relative;
+				margin-bottom: 50px;
+				z-index: 1;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 800%;
+					height: 512px;
+					border-radius: 5px;
+					bottom: -20px;
+					right: -20px;
+					background-color: $bg-prices-table-strong;
+					z-index: -5;
+				}
+			}
+
+			&-maps2 {
+				position: relative;
+				margin-bottom: 50px;
+				z-index: 1;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 800%;
+					height: 720px;
+					border-radius: 5px;
+					bottom: -20px;
+					right: -20px;
+					background-color: $bg-prices-table-strong;
+					z-index: -5;
+				}
+			}
+
+			&-company {
+				font-family: 'hero-bold';
+				margin-bottom: 12px;
+			}
+
+			&-address {
+				line-height: 23px;
+
+				&-bold {
+					font-family: 'hero-bold';
+				}
+
+				&-button {
+					background-color: $CTA-color-darker;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 16px;
+					margin: 15px 25px;
+					padding: 10px 8px;
+					cursor: pointer;
+					border-radius: 5px;
+					color: $white;
+					font-family: 'hero-bold';
+					transition: all 0.3s;
+
+					&:hover {
+						background-color: $CTA-color;
+					}
+
+					&-svg {
+						margin-right: 12px;
+					}
+				}
+
+				&-center {
+					display: flex;
+					justify-content: center;
+					margin-top: 12px;
+				}
+
+				&-mb {
+					margin-bottom: 45px;
+				}
+			}
+		}
 	}
 }
 
