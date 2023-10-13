@@ -64,7 +64,7 @@ body {
 	position: fixed;
 	width: 100%;
 	top: 0px;
-	z-index: 10;
+	z-index: 1000;
 	background-color: $bg-rings-and-nav;
 	display: flex;
 	justify-content: center;
@@ -972,7 +972,7 @@ body {
 				&-button {
 					background-color: $CTA-color-darker;
 					display: flex;
-					justify-content: center;
+					justify-content: space-around;
 					align-items: center;
 					font-size: 16px;
 					margin: 15px 25px;
@@ -988,7 +988,16 @@ body {
 					}
 
 					&-svg {
-						margin-right: 12px;
+						transition: all .4s;
+					}
+
+					&:hover .contact__box-address-button-svg {
+						transform: scale(1.6) rotate(38deg);
+
+					}
+
+					&-span {
+						margin-right: 37px;
 					}
 				}
 
