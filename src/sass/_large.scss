@@ -1,6 +1,5 @@
 @media (min-width: 992px) {
 	.nav {
-
 		.wrapper-nav {
 			display: flex;
 			justify-content: space-between;
@@ -13,7 +12,7 @@
 			letter-spacing: 3px;
 			line-height: 18px;
 			padding: 2px 25px;
-	
+
 			&-span2 {
 				font-size: 14px;
 				letter-spacing: 1px;
@@ -110,7 +109,6 @@
 			}
 		}
 
-
 		&__burger-btn {
 			display: none;
 		}
@@ -173,8 +171,6 @@
 			&:hover::before {
 				background-color: $brown-lite;
 			}
-
-
 		}
 
 		&__mobile-menu-container {
@@ -209,7 +205,6 @@
 	}
 
 	.rings {
-
 		&__box {
 			top: -80px;
 		}
@@ -246,9 +241,154 @@
 				font-size: 15px;
 			}
 		}
+
+		.contact {
+			&__container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&__boxMTmb {
+				margin: 50px 0;
+			}
+
+			&__box {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&-text {
+					position: relative;
+					margin-bottom: 20px;
+					padding: 12px 16px;
+					z-index: 10;
+
+					&::after {
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 235px;
+						border-radius: 5px;
+						top: 0px;
+						left: 0px;
+						background-color: $bg-prices-table-light;
+						z-index: -1;
+						box-shadow: 1px 1px 12px hsla(0, 0%, 0%, 0.2);
+					}
+
+					&-phone {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+					}
+				}
+
+				&-text2 {
+					position: relative;
+					margin-bottom: 20px;
+					margin-top: 20px;
+					padding: 12px 16px;
+					z-index: 10;
+
+					&::after {
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 475px;
+						border-radius: 5px;
+						top: 0px;
+						left: 0px;
+						background-color: $bg-prices-table-light;
+						z-index: -1;
+						box-shadow: 1px 1px 12px hsla(0, 0%, 0%, 0.2);
+					}
+				}
+
+				&-maps {
+					margin-left: 20px;
+					margin-bottom: 50px;
+
+					&::after {
+						content: '';
+						position: absolute;
+						width: 1000%;
+						height: 590px;
+						border-radius: 5px;
+						bottom: -20px;
+						right: -20px;
+						background-color: $bg-prices-table-strong;
+						z-index: -5;
+						box-shadow: 1px 1px 12px hsla(0, 0%, 0%, 0.2);
+					}
+
+					&-mobile {
+						display: none;
+					}
+
+					&-small {
+						display: none;
+					}
+
+					&-medium {
+						display: none;
+					}
+
+					&-large {
+						display: block;
+					}
+				}
+
+				&-maps2 {
+					margin-left: 20px;
+					margin-bottom: 0px;
+
+					&::after {
+						content: '';
+						position: absolute;
+						width: 1000%;
+						height: 590px;
+						border-radius: 5px;
+						bottom: -20px;
+						right: inherit;
+						left: -340px;
+						background-color: $bg-prices-table-strong;
+						z-index: -5;
+						box-shadow: 1px 1px 12px hsla(0, 0%, 0%, 0.2);
+					}
+
+					&-mobile {
+						display: none;
+					}
+
+					&-small {
+						display: none;
+					}
+
+					&-medium {
+						display: none;
+					}
+
+					&-large {
+						display: block;
+					}
+				}
+
+				&-address {
+					&-center {
+						display: flex;
+						justify-content: center;
+						margin-top: 12px;
+					}
+
+					&-mb {
+						margin-bottom: 45px;
+					}
+				}
+			}
+		}
 	}
-
-
 
 	.footer {
 		&__box-offer {
@@ -270,6 +410,43 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+		}
+	}
+}
+
+// for google maps (contact section)
+@media (min-width: 1250px) {
+	.main {
+		.contact {
+			&__box {
+				&-maps {
+					margin-left: 65px;
+
+					&-large {
+						display: none;
+					}
+
+					&-largest {
+						display: block;
+					}
+				}
+
+				&-maps2 {
+					margin-left: 65px;
+
+					&::after {
+						left: -385px;
+					}
+
+					&-large {
+						display: none;
+					}
+
+					&-largest {
+						display: block;
+					}
+				}
+			}
 		}
 	}
 }

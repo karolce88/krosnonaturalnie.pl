@@ -40,6 +40,38 @@
 			}
 		}
 
+		.contact {
+			&__box {
+
+				&-maps {
+					&-mobile {
+						display: none;
+					}
+					
+					&-small {
+						display: block;
+					}
+					
+					&-medium {
+						display: none;
+					}
+				}
+
+				&-maps2 {
+					&-mobile {
+						display: none;
+					}
+
+					&-small {
+						display: block;
+					}
+					
+					&-medium {
+						display: none;
+					}
+				}
+			}
+		}
 	}
 
 

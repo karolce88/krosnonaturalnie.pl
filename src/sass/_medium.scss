@@ -6,7 +6,7 @@
 		&::before {
 			background-color: #12121237;
 		}
-	
+
 		&::after {
 			background-color: #15020242;
 		}
@@ -31,13 +31,12 @@
 		}
 	}
 
-	.faq-container{
+	.faq-container {
 		height: auto;
 		width: 80%;
 	}
 
 	.main {
-
 		.aboutme {
 			scroll-margin-top: 0px;
 
@@ -53,6 +52,38 @@
 
 			&__tbody-row-items {
 				padding: 12px 14px;
+			}
+		}
+
+		.contact {
+			&__box {
+				&-maps {
+					&-mobile {
+						display: none;
+					}
+
+					&-small {
+						display: none;
+					}
+
+					&-medium {
+						display: block;
+					}
+				}
+
+				&-maps2 {
+					&-mobile {
+						display: none;
+					}
+
+					&-small {
+						display: none;
+					}
+
+					&-medium {
+						display: block;
+					}
+				}
 			}
 		}
 	}
