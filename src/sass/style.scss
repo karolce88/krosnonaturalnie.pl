@@ -602,6 +602,10 @@ body {
 		width: 100%;
 	}
 
+	.h3-delete-margin-top {
+		margin-top: 20px;
+	}
+
 	.cookies {
 		.hide-cookies {
 			display: none;
@@ -797,6 +801,86 @@ body {
 			margin-bottom: 50px;
 			width: 100%;
 		}
+
+		&__michal {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			&-img {
+				max-width: 400px;
+				width: 100%;
+				height: auto;
+			}
+
+			&-text {
+				margin: 0 6px;
+				line-height: 24px;
+
+				&-p {
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		&__magda {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			&-img {
+				max-width: 650px;
+				width: 90%;
+				height: auto;
+
+				&-desktop {
+					display: none;
+				}
+			}
+
+			&-text {
+				margin: 0 6px;
+				line-height: 24px;
+
+				&-p {
+					margin-bottom: 15px;
+				}
+
+				&-without-mb {
+					margin-bottom: 5px;
+					font-family: 'hero-bold';
+				}
+
+				&-ul {
+					padding-left: 35px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		&__fabian {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			&-img {
+				max-width: 400px;
+				width: 100%;
+				height: auto;
+			}
+
+			&-text {
+				margin: 0 6px;
+				line-height: 24px;
+
+				&-p {
+					margin-bottom: 15px;
+				}
+			}
+		}
 	}
 
 	.offer {
@@ -868,7 +952,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		height: 700px;
 		overflow-x: hidden;
 
 		&__splide-right {
@@ -910,7 +993,12 @@ body {
 				width: 100%;
 				height: 460px;
 				box-shadow: 1px 1px 12px hsla(0, 0%, 0%, 0.2);
+				transition: all .3s;
 				position: relative;
+
+				&:hover {
+					box-shadow: 2px 3px 16px hsla(0, 0%, 0%, 0.5);
+				}
 			}
 
 			&__text-box {
@@ -921,6 +1009,13 @@ body {
 				text-align: justify;
 				line-height: 23px;
 				margin: 0 auto;
+
+				&-h3 {
+					font-family: 'hero-bold';
+					line-height: 23px;
+					font-size: 16px;
+					margin-bottom: 8px;
+				}
 			}
 
 			&__img {
@@ -935,7 +1030,7 @@ body {
 			}
 
 			&__button {
-				margin-top: 15px;
+				margin-top: 2%;
 				width: 100%;
 				display: flex;
 				justify-content: flex-end;
@@ -944,8 +1039,10 @@ body {
 
 				&-item {
 					text-decoration: none;
-					padding: 8px 20px;
+					padding: 5px 13px;
+					font-size: 12px;
 					cursor: pointer;
+					text-transform: uppercase;
 				}
 			}
 
@@ -982,6 +1079,10 @@ body {
 				font-size: 13px;
 				right: 0px;
 				cursor: initial !important;
+			}
+
+			.h3-mb {
+				margin-top: 38px;
 			}
 		}
 	}

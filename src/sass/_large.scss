@@ -234,6 +234,45 @@
 			&__box-text-title-h2 {
 				font-size: 35px;
 			}
+
+			&__michal {
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+
+				&-img {
+					margin-left: 20px;
+				}
+			}
+
+			&__magda {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: flex-start;
+
+				&-img {
+					margin-right: 20px;
+
+					&-mobile {
+						display: none;
+					}
+
+					&-desktop {
+						display: block;
+					}
+				}
+			}
+
+			&__fabian {
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+
+				&-img {
+					margin-left: 20px;
+				}
+			}
 		}
 
 		.prices {

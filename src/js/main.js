@@ -222,12 +222,14 @@ async function main() {
 	blogBtn.forEach(btn => btn.addEventListener('click', (e) => {
 		e.target.parentElement.previousElementSibling.classList.add('show-text-box')
 		e.target.parentElement.previousElementSibling.firstElementChild.classList.add('show-text-box-burger')
+		e.target.parentElement.previousElementSibling.firstElementChild.nextElementSibling.firstElementChild.classList.add('h3-mb')
 	}))
 
 	blogBurger.forEach
 	(btn => btn.addEventListener('click', (e) => {
 			e.target.parentElement.classList.remove('show-text-box')
 			e.target.classList.remove('show-text-box-burger')
+			e.target.nextElementSibling.firstElementChild.classList.remove('h3-mb')
 	}))
 
 
