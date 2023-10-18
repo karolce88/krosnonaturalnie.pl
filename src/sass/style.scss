@@ -803,20 +803,47 @@ body {
 		}
 
 		&__michal {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 
+			&::after {
+				content: '';
+				position: absolute;
+				left: 5%;
+				bottom: 32%;
+				width: 250px;
+				height: 250px;
+				border-radius: 60%;
+				background-color: #ffffff2e;
+				z-index: 0;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 60%;
+				border-radius: 60%;
+				background-color: #ffffff24;
+				z-index: 0;
+			}
+
 			&-img {
 				max-width: 400px;
 				width: 100%;
 				height: auto;
+				z-index: 1;
 			}
 
 			&-text {
 				margin: 0 6px;
 				line-height: 24px;
+				z-index: 2;
 
 				&-p {
 					margin-bottom: 15px;
@@ -825,17 +852,47 @@ body {
 		}
 
 		&__magda {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 
+			&::after {
+				content: '';
+				position: absolute;
+				left: 35%;
+				bottom: 16%;
+				width: 250px;
+				height: 250px;
+				border-radius: 60%;
+				background-color: #ffffff2e;
+				z-index: 0;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 78%;
+				border-radius: 60%;
+				background-color: #ffffff24;
+				z-index: 0;
+			}
+
 			&-img {
+				margin-left: 20px;
 				max-width: 650px;
-				width: 90%;
+				max-width: 100%;
 				height: auto;
+				z-index: 1;
 
 				&-desktop {
+					max-width: 650px;
+					max-width: 75%;
+					height: auto;
 					display: none;
 				}
 			}
@@ -843,14 +900,17 @@ body {
 			&-text {
 				margin: 0 6px;
 				line-height: 24px;
+				z-index: 2;
 
 				&-p {
 					margin-bottom: 15px;
+					line-height: 24px;
 				}
 
 				&-without-mb {
 					margin-bottom: 5px;
 					font-family: 'hero-bold';
+					line-height: 24px;
 				}
 
 				&-ul {
@@ -861,23 +921,76 @@ body {
 		}
 
 		&__fabian {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 
+			&::after {
+				content: '';
+				position: absolute;
+				left: 5%;
+				bottom: 32%;
+				width: 250px;
+				height: 250px;
+				border-radius: 60%;
+				background-color: #ffffff2e;
+				z-index: 0;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 60%;
+				border-radius: 60%;
+				background-color: #ffffff24;
+				z-index: 0;
+			}
+
 			&-img {
 				max-width: 400px;
 				width: 100%;
 				height: auto;
+				z-index: 1;
 			}
 
 			&-text {
 				margin: 0 6px;
 				line-height: 24px;
+				z-index: 2;
 
 				&-p {
 					margin-bottom: 15px;
+				}
+			}
+		}
+
+		&__group-photo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 15px;
+			transition: all .6s;
+			width: 100%;
+			
+			&-img {
+				width: 1200px;
+				height: 799px;
+				max-width: 90%;
+				height: auto;
+				border-radius: 50%;
+				margin: 70px 0px;
+				transition: all .3s;
+				box-shadow: 6px 6px 12px black;
+
+
+				&:hover {
+					box-shadow: 12px 12px 30px black;
+					transform: scale(1.01);
 				}
 			}
 		}
@@ -964,18 +1077,16 @@ body {
 			transform: translate(20%, -10%);
 		}
 
-
-
 		.splide {
 			position: relative;
 			left: 0;
 			margin: 60px 0 60px 0;
 			cursor: grab;
-	
+
 			&__pagination {
 				display: none;
 			}
-			
+
 			&__arrow {
 				display: none;
 			}
@@ -993,7 +1104,7 @@ body {
 				width: 100%;
 				height: 460px;
 				box-shadow: 1px 1px 12px hsla(0, 0%, 0%, 0.2);
-				transition: all .3s;
+				transition: all 0.3s;
 				position: relative;
 
 				&:hover {
@@ -1023,7 +1134,7 @@ body {
 				height: auto;
 				margin-bottom: 15px;
 			}
-			
+
 			&__img-item {
 				max-width: 100%;
 				height: auto;
@@ -1035,7 +1146,6 @@ body {
 				display: flex;
 				justify-content: flex-end;
 				border-radius: 5px;
-				
 
 				&-item {
 					text-decoration: none;
@@ -1058,9 +1168,9 @@ body {
 				height: 28px;
 				margin: 4px;
 				background-color: #bfbaba72;
-				pointer-events: none; 
+				pointer-events: none;
 			}
-			
+
 			.show-text-box-burger {
 				display: flex;
 				justify-content: flex-end;
@@ -1087,28 +1197,15 @@ body {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
 	.contact {
 		background-color: $bg-contact;
 		overflow-x: hidden;
-
 
 		&__container {
 			margin: 50px 0;
 		}
 
 		&__box {
-
 			&-text {
 				position: relative;
 				margin-bottom: 20px;
@@ -1271,12 +1368,11 @@ body {
 					}
 
 					&-svg {
-						transition: all .4s;
+						transition: all 0.4s;
 					}
 
 					&:hover .contact__box-address-button-svg {
 						transform: scale(1.6) rotate(38deg);
-
 					}
 
 					&-span {
