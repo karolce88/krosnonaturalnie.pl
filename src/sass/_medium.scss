@@ -43,6 +43,35 @@
 			&__box-text-title-h2 {
 				font-size: 26px;
 			}
+
+			&__aboutus {
+
+				&::after {
+					left: 5%;
+					bottom: 45%;
+					width: 250px;
+					height: 250px;
+					border-radius: 60%;
+				}
+	
+				&::before {
+					top: -5%;
+					left: 0%;
+					width: 100%;
+					height: 50%;
+					border-radius: 60%;
+				}
+
+				&-photo-img {
+					max-width: 70vw;
+				}
+			}
+
+			// &__group-photo {
+			// 	&-img {
+			// 		max-width: 75vw;
+			// 	}
+			// }
 		}
 
 		.prices {

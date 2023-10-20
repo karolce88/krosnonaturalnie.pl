@@ -222,14 +222,49 @@
 	}
 
 	.main {
+		overflow-x: hidden;
 		scroll-margin-top: -300px;
 
 		.faq-container {
-			width: 70%;
+			width: 60%;
 		}
 
 		.aboutme {
 			scroll-margin-top: 0px;
+
+			&__aboutus {
+				padding-bottom: 70px;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: nowrap;
+
+				&::after {
+					left: 40%;
+					bottom: 65%;
+					width: 250px;
+					height: 250px;
+					border-radius: 60%;
+				}
+	
+				&::before {
+					top: -5%;
+					left: -5%;
+					width: 65%;
+					height: 95%;
+					border-radius: 60%;
+				}
+
+				&-photo-img {
+					max-width: 40vw;
+					margin: 0 15px;
+				}
+			}
+
+			// &__group-photo {
+			// 	&-img {
+			// 		max-width: 55vw;
+			// 	}
+			// }
 
 			&__box-text-title-h2 {
 				font-size: 35px;
@@ -256,7 +291,7 @@
 					border-radius: 60%;
 					background-color: #ffffff2e;
 				}
-	
+
 				&::before {
 					content: '';
 					position: absolute;
@@ -287,7 +322,7 @@
 					background-color: #ffffff2e;
 					z-index: 0;
 				}
-	
+
 				&::before {
 					content: '';
 					position: absolute;
@@ -331,7 +366,7 @@
 					border-radius: 60%;
 					background-color: #ffffff2e;
 				}
-	
+
 				&::before {
 					content: '';
 					position: absolute;
@@ -345,6 +380,32 @@
 
 				&-img {
 					margin-left: 20px;
+				}
+			}
+		}
+
+		.offer {
+			&__container {
+				&-boxes {
+					&-box {
+						flex-wrap: nowrap;
+
+						&-img {
+							margin-left: 30px;
+							margin-right: 10px;
+							max-width: 400px;
+							height: 600px;
+							display: flex;
+							flex-shrink: 0;
+
+							&-aromaterapia {
+								margin-left: 30px;
+								margin-right: 10px;
+								width: 400px;
+								height: 267px;
+							}
+						}
+					}
 				}
 			}
 		}

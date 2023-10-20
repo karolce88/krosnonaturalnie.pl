@@ -28,6 +28,24 @@
 	.main {
 		.aboutme {
 			position: relative;
+
+			// &__group-photo {
+			// 	&-img {
+			// 		max-width: 75vw;
+			// 	}
+			// }
+		}
+
+		.offer {
+			&__container {
+				&-boxes {
+					&-box {
+						&-img {
+							max-width: 40%;
+						}
+					}
+				}
+			}
 		}
 
 		.prices {
