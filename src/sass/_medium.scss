@@ -75,6 +75,8 @@
 		}
 
 		.prices {
+			scroll-margin-top: -50px;
+
 			&__table {
 				font-size: 15px;
 			}
@@ -84,7 +86,13 @@
 			}
 		}
 
+		.blog {
+			scroll-margin-top: -50px;
+		}
+
 		.contact {
+			scroll-margin-top: -50px;
+
 			&__box {
 				&-maps {
 					&-mobile {

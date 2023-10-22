@@ -566,6 +566,7 @@ body {
 		text-transform: uppercase;
 		font-size: 15px;
 		margin-left: 80px;
+		z-index: 1;
 
 		&::before {
 			content: '';
@@ -674,6 +675,7 @@ body {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		z-index: 0;
 	}
 
 	.accordion {
@@ -704,6 +706,7 @@ body {
 		pointer-events: none;
 		font-size: 'roboto-bold';
 		transition: all 0.5s ease-in;
+		user-select: none;
 	}
 
 	.h3-faq-svg-icon {
@@ -864,6 +867,7 @@ body {
 		}
 
 		&__michal {
+			scroll-margin-top: 120px;
 			position: relative;
 			display: flex;
 			flex-direction: column;
@@ -913,6 +917,7 @@ body {
 		}
 
 		&__magda {
+			scroll-margin-top: 120px;
 			position: relative;
 			display: flex;
 			flex-direction: column;
@@ -982,6 +987,7 @@ body {
 		}
 
 		&__fabian {
+			scroll-margin-top: 120px;
 			position: relative;
 			display: flex;
 			flex-direction: column;
@@ -1062,7 +1068,7 @@ body {
 			height: 450px;
 			background-size: cover;  
 			background-attachment: fixed;
-			background-position: 45% 50%;
+			background-position: 45% 30%;
 			margin: 80px 0;
 		}
 	}
@@ -1070,11 +1076,17 @@ body {
 	.offer {
 		background-color: $bg-offer;
 
+		&__refleksologia, &__masaz, &__aromaterapie, &__akupunktura, &__o-grzybach, &__ziololecznictwo, &__hirudoterapia {
+		 scroll-margin-top: 120px;
+		}
+
+
 		&__container {
 			width: 100%;
 			margin-bottom: 50px;
 			
 			&-boxes {
+				position: relative;
 				display: flex;
 				justify-content: center;
 				flex-direction: column;
@@ -1085,6 +1097,19 @@ body {
 					display: flex;
 					justify-content: center;
 					flex-wrap: wrap;
+					z-index: 0;
+
+					&::after {
+						content: '';
+						position: absolute;
+						width: 650px;
+						height: 280px;
+						background-color: #ffffff24;
+						border-radius: 50%;
+						z-index: -1;
+						top: -110px;
+						left: -55px;
+					}
 
 					&-img {
 						width: 800px;
@@ -1123,19 +1148,26 @@ body {
 						&-txt {
 							line-height: 24px;
 							margin: 15px 0;
-
+						
 							&-bold {
 								font-family: 'hero-bold';
 								font-weight: bold;
 								line-height: 24px;
 								margin: 15px 0;
+								top: 0;
+								left: 0;
 							}
 
 							&-ul {
 								padding-left: 40px;
 								padding-bottom: 20px;
 								line-height: 24px;
+
+								&-li {
+									margin: 12px 0;
+								}
 							}
+
 						}
 		
 						&-mt{
@@ -1155,6 +1187,7 @@ body {
 	}
 
 	.prices {
+		scroll-margin-top: -25px;
 		background-color: $bg-prices;
 
 		&__table {
@@ -1215,6 +1248,7 @@ body {
 	}
 
 	.blog {
+		scroll-margin-top: -25px;
 		background-color: $bg-blog;
 		display: flex;
 		flex-direction: column;
@@ -1352,6 +1386,7 @@ body {
 	}
 
 	.contact {
+		scroll-margin-top: -25px;
 		background-color: $bg-contact;
 		overflow-x: hidden;
 
